@@ -13,9 +13,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
-      - name: Compile
+      - name: CompileH
         run: javac Hello.java
-             javac Welcome.java
-      - name: Run
+      - name: RunH
         run: java Hello
-             java Welcome
+      - name: CompileW
+        run: javac Welcome.java
+      - name: RunW
+        run: java Welcome
